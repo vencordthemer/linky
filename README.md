@@ -56,6 +56,7 @@ When created add these rules :
 
 ```
 
+(You may need to index the links collection)
 
 ***
 
