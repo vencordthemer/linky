@@ -79,7 +79,7 @@ const firebaseConfig = {
 ```
 and add it to `src/firebase.js`
 
-## Usage
+## 💻 Usage
 
 Start the server:
 ```
