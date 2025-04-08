@@ -20,7 +20,7 @@ Then, install dependancies:
  ```bash
 npm i
  ```
-###  Firebase
+###  🔥 Firebase
 
 Go to the [Firebase Console](https://console.firebase.google.com/u/0/)
 
