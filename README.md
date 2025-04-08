@@ -1,11 +1,11 @@
-# Linky 
+# 🔗 Linky 
 
 [View a demo linky](https://linky-s.pages.dev/demo)
 
 This is a bare-bones Linktree clone using [Vite](https://vite.dev/) and [Firebase](https://console.firebase.google.com/u/0/).
 
 
-## Installation
+##  Installation
 
 clone this repo:
 
@@ -20,7 +20,7 @@ Then, install dependancies:
  ```bash
 npm i
  ```
-### Firebase
+###  Firebase
 
 Go to the [Firebase Console](https://console.firebase.google.com/u/0/)
 
