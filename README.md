@@ -5,7 +5,7 @@
 This is a bare-bones Linktree clone using [Vite](https://vite.dev/) and [Firebase](https://console.firebase.google.com/u/0/).
 
 
-##  Installation
+## 🔽 Installation
 
 clone this repo:
 
