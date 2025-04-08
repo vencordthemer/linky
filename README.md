@@ -64,7 +64,7 @@ When created add these rules :
 
 ***
 
-### Firebase Web App 
+### 🌐 Firebase Web App 
 Make a `Web App` by going to the project overview and clicking on </> and creating a app. You will get some code from this and you should copy this part :
 ```javascript
 const firebaseConfig = {
