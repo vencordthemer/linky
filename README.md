@@ -20,7 +20,7 @@ Then, install dependancies:
  ```bash
 npm i
  ```
-###  🔥 Firebase
+###   🔥 Firebase
 
 Go to the [Firebase Console](https://console.firebase.google.com/u/0/)
 
@@ -30,7 +30,7 @@ When you done that go to the `Authentication` and enable `Email and password` an
 
 ***
 
-### Firestore
+### 🔥📦 Firestore
 
 Go to the `Cloud Firestore` tab and enable it in production
 
