@@ -36,7 +36,7 @@ Go to the `Cloud Firestore` tab and enable it in production
 
 When created add these rules :
 
-```
+```js
         rules_version = '2';
         service cloud.firestore {
           match /databases/{database}/documents {
