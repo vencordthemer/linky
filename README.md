@@ -1,5 +1,9 @@
 # 🔗 Linky 
 
+  <div class="status-container">
+    <img src="https://linky-github-status-svg.vercel.app/status.svg" alt="Linky GitHub Status">
+  </div>
+
 [View a demo linky](https://linky-s.pages.dev/demo)
 
 This is a bare-bones Linktree clone using [Vite](https://vite.dev/) and [Firebase](https://console.firebase.google.com/u/0/).
