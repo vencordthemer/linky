@@ -1,8 +1,7 @@
 # 🔗 Linky 
+[![Linky GitHub Status](https://linky-github-status-svg.vercel.app/status.svg)](https://linky.statuspage.io/)
 
-  <div align="center">
-    <img src="https://linky-github-status-svg.vercel.app/status.svg" alt="Linky GitHub Status">
-  </div>
+
 
 
 ---
