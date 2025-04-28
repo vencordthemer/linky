@@ -1,3 +1,15 @@
+/*!
+* Linky - A Linktree Clone Built with Vite and Firebase
+* Copyright (c) 2025 Vencordthemer and contributors
+*
+* This project is open-source and licensed under the MIT License.
+* You can find the source code at: https://github.com/vencordthemer/linky
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* MIT License for more details.
+*/
 .navbar {
   background: #ffffff; /* White background */
   height: 80px;
@@ -81,6 +93,31 @@
   align-items: center; /* Align text vertically */
 }
 
-.navbar-button-link:hover {
-  color: #007bff;
-} 
+.logoutButton .navbar-button-link {
+  background: none; /* Ensures no background color */
+  border: none; /* No border */
+  padding: 0.5rem 1rem; /* Consistent padding */
+  margin: 0;
+  color: #333; /* Dark text color */
+  cursor: pointer;
+  font-size: 1.1rem; /* Font size */
+  font-family: inherit; /* Inherit font */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* No underline */
+}
+
+.logoutButton .navbar-button-link:hover {
+  color: #007bff; /* Blue color on hover */
+  border-bottom: 4px solid #007bff; /* Blue border on hover */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.2s ease-out; /* Smooth transition */
+}
+
+.github-icon {
+  width: 32px; 
+  height: 32px;
+  margin-right: 9px; 
+  vertical-align: middle; 
+}
