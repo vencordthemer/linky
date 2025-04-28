@@ -1,3 +1,15 @@
+/*!
+* Linky - A Linktree Clone Built with Vite and Firebase
+* Copyright (c) 2025 Vencordthemer and contributors
+*
+* This project is open-source and licensed under the MIT License.
+* You can find the source code at: https://github.com/vencordthemer/linky
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* MIT License for more details.
+*/
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -164,7 +176,7 @@ export const AuthProvider = ({ children }) => {
             case 'auth/user-disabled':
                 return 'This user account has been disabled.';
             case 'auth/user-not-found':
-            case 'auth/wrong-password':
+            case 'auth/invalid-credential':
                 return 'Invalid email or password.';
             case 'auth/email-already-in-use':
                 return 'This email address is already in use.';
