@@ -9,6 +9,11 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * MIT License for more details.
+ *Credits:
+* - Firebase for authentication and database
+* - Vencordthemer for coding the main app
+* - Freepik for icons
+* - YOU for using this app
  */
 
 import React, { createContext, useState, useContext, useEffect } from 'react';
