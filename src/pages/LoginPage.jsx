@@ -9,6 +9,7 @@
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 * MIT License for more details.
+*
 *Credits:
 * - Firebase for authentication and database
 * - Vencordthemer for coding the main app
@@ -19,7 +20,7 @@ import React, { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 
 import { useAuth } from '../context/AuthContext';
-
+import googleIcon from '../assets/googleIcon.svg';
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -95,19 +96,41 @@ const LoginPage = () => {
         </button>
       </form>
 
-      {/* Google Sign-In Button */}
-      <div className="text-center mt-3 mb-3">
-        <p style={{marginBottom: '0.5rem'}}>OR</p>
-        <button 
-            onClick={handleGoogleSignIn} 
-            className="btn btn-secondary" // Use secondary style or create a google style
-            disabled={loading}
-            style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}} // Basic styling
-        >
-           {/* Add Google Icon later if desired */} 
-          <span style={{marginLeft: '0.5rem'}}>{loading ? 'Signing in...' : 'Sign in with Google'}</span>
-        </button>
-      </div>
+{/* Google Sign-In Button */}
+<div className="text-center mt-3 mb-3">
+  <p style={{ marginBottom: '0.5rem' }}>OR</p>
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}
+  >
+    <button
+      onClick={handleGoogleSignIn}
+      className="btn btn-secondary"
+      disabled={loading}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        padding: '0',
+      }}
+    >
+      <img
+        src={googleIcon}
+        alt="Google Icon"
+        style={{
+          width: '24px',
+          height: '24px',
+        }}
+      />
+    </button>
+  </div>
+</div>
 
       <p className="text-center mt-3">
         Don't have an account? <Link to="/signup">Sign Up</Link>
@@ -115,5 +138,6 @@ const LoginPage = () => {
     </div>
   );
 };
+
 
 export default LoginPage; 
