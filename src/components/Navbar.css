@@ -9,6 +9,7 @@
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 * MIT License for more details.
+*
 *Credits:
 * - Firebase for authentication and database
 * - Vencordthemer for coding the main app
@@ -125,4 +126,60 @@
   height: 32px;
   margin-right: 9px; 
   vertical-align: middle; 
+}
+
+/* Hamburger toggle button (only visible on mobile) */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Adjust for button color when menu is closed */
+.navbar-toggle:focus {
+  outline: none;
+}
+
+.navbar-toggle:hover {
+  color: #333; /* Reset color to match the default button color */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 998;
+  }
+
+  .navbar-menu.mobile-open {
+    display: flex;
+  }
+
+  .navbar-item {
+    height: auto;
+    text-align: left;
+  }
+
+  .navbar-links, .navbar-button-link {
+    width: 100%;
+    padding: 1rem;
+    display: block;
+  }
+
+  .logoutButton .navbar-button-link {
+    justify-content: flex-start;
+  }
 }
