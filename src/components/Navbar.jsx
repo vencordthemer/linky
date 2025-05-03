@@ -65,7 +65,7 @@ const Navbar = () => {
                             </li>
                             <li className="navbar-item">
                                 <NavLink
-                                    to={user.profile?.username ? `/${user.profile.username}` : '/'}
+                                    to={user.profile?.username ? `/user/${user.profile.username}` : '/'}
                                     className="navbar-links"
                                     style={activeStyle}
                                     onClick={() => setMenuOpen(false)}
@@ -120,4 +120,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
