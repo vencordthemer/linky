@@ -52,7 +52,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/:username" element={<UserProfilePage />} />
+          <Route path="/user/:username" element={<UserProfilePage />} />
           <Route path="*" element={<NotFoundPage />} /> {/* Catch-all for 404 */} 
         </Routes>
       </div>
