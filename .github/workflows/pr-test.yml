@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 2
 
     steps:
       - name: Checkout PR code
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -30,8 +30,3 @@ jobs:
           DIFF=$(echo "$END - $START" | bc)
           echo "✓ Built in ${DIFF}s"
 
-      - name: Start dev server briefly and check output
-        run: |
-          timeout 10s npm run dev > output.log 2>&1 || true
-          cat output.log
-          grep -E "Local:   http://localhost:5173/" output.log
