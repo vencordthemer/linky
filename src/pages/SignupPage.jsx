@@ -97,33 +97,29 @@ const SignupPage = () => {
           {loading ? 'Signing up...' : 'Sign Up'}
         </button>
       </form>
-      {/* Google Sign-In Button */}
+  {/* Google Sign-In Button */}
 <div className="text-center mt-3 mb-3">
   <p style={{ marginBottom: '0.5rem' }}>OR</p>
-  <div
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}
-  >
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
     <button
       onClick={handleGoogleSignIn}
-      className="btn btn-secondary"
+      className="btn"
       disabled={loading}
       style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '50px',
-        height: '50px',
-        borderRadius: '50%',
+        width: '50px', // Set width
+        height: '50px', // Set height
+        borderRadius: '50%', // Make it circular
+        background: '#000000',
+        border: '1px solid #ddd',
         padding: '0',
       }}
     >
       <img
         src={googleIcon}
-        alt="Google Icon"
+        alt="Sign in with Google"
         style={{
           width: '24px',
           height: '24px',
