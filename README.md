@@ -95,3 +95,21 @@ Start the server:
 ```
 npm run dev
 ```
+## :shield: Badge
+
+I have designed a badge for people to put on their README.
+
+### 🖼 Preview
+
+<a href="https://linky-s.pages.dev/user/example">
+  <img src="https://linky-s.pages.dev/badge.jpg" alt="Find Me On Linky" width="125"/>
+</a>
+
+### 👨‍💻 Code
+
+```
+<a href="https://linky-s.pages.dev/user/YOUR_USERNAME">
+  <img src="https://linky-s.pages.dev/badge.jpg" alt="Find Me On Linky" width="125"/>
+</a>
+```
+
