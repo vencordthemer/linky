@@ -1,0 +1,70 @@
+name: 🐛 Bug Report
+description: Report something that's not working as expected.
+title: "[Bug]: "
+labels: [bug]
+assignees:
+  - your-github-username
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug! Please provide as much detail as possible.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Where is the bug occurring (e.g. browser, OS, device)?
+      placeholder: e.g. Chrome 123.0.0, Windows 11
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen.
+      placeholder: Describe the bug here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: If applicable, add screenshots or screen recordings to help explain your problem.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this issue?
+      options:
+        - 🔴 Critical
+        - 🟠 High
+        - 🟡 Medium
+        - 🟢 Low
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing issues to avoid duplicates.
+          required: true
+        - label: I have provided all necessary information.
+          required: true
