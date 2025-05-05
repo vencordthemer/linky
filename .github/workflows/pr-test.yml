@@ -1,4 +1,4 @@
-name: Test A Pull Request
+name: Build and Dev Server Check
 
 on:
   pull_request:
@@ -6,9 +6,9 @@ on:
       - master
 
 jobs:
-  check-dev-output:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 5
 
     steps:
       - name: Checkout PR code
@@ -22,7 +22,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run dev server briefly and check output
+      - name: Run build and time it
+        run: |
+          START=$(date +%s.%N)
+          npm run build
+          END=$(date +%s.%N)
+          DIFF=$(echo "$END - $START" | bc)
+          echo "✅ Built in ${DIFF}s"
+
+      - name: Start dev server briefly and check output
         run: |
           timeout 10s npm run dev > output.log 2>&1 || true
           cat output.log
