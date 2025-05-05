@@ -28,7 +28,7 @@ jobs:
           npm run build
           END=$(date +%s.%N)
           DIFF=$(echo "$END - $START" | bc)
-          echo "✅ Built in ${DIFF}s"
+          echo "✓ Built in ${DIFF}s"
 
       - name: Start dev server briefly and check output
         run: |
