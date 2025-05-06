@@ -16,10 +16,10 @@ body:
       label: Environment
       description: Where is this bug?
       options:
-        - Production (https://linky-s.pages.dev/)
-        - Development (https://development.linky-s.pages.dev/)
-        - Local Sever (probably http://localhost:5173/)
-        - Somewhere Else (???)
+        - Production
+        - Development
+        - Local Sever 
+        - Somewhere Else 
         
   - type: textarea
     id: what-happened
