@@ -26,4 +26,10 @@ jobs:
         run: |
           timeout 10s npm run dev > dev_output.log 2>&1 || true
           cat dev_output.log
-          grep -q "Local:.*http://localhost:" dev_output.log && echo "Dev server started successfully." || (echo "Dev server did not start." && exit 1)
+          if grep -q "http://localhost:5173/" dev_output.log; then
+            echo "Dev server started successfully."
+            exit 0
+          else
+            echo "Dev server did not start."
+            exit 1
+          fi
