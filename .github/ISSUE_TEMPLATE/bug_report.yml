@@ -9,18 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to file a bug! Please provide as much detail as possible.
-        
- - type: dropdown
-    id: environment
-    attributes:
-      label: Environment
-      description: Where is this bug?
-      options:
-        - Production
-        - Development
-        - Local Sever 
-        - Somewhere Else 
-        
+
   - type: textarea
     id: what-happened
     attributes:
