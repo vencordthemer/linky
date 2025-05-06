@@ -1,0 +1,50 @@
+name: 🚀 Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+        Thanks for suggesting an idea! Please fill out the details below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: What should the feature do? What problem does it solve?
+      placeholder: A clear and concise description of the feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Why is this feature useful?
+      description: Explain how this feature would improve the app or workflow.
+      placeholder: This feature will help users by...
+    validations:
+      required: true
+
+  - type: input
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Did you try any workarounds or other approaches?
+      placeholder: Any other methods you tried...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Nice to have
+        - Important
+        - Critical
+      default: 0
+    validations:
+      required: true
