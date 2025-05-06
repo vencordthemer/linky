@@ -9,16 +9,18 @@ body:
     attributes:
       value: |
         Thanks for taking the time to file a bug! Please provide as much detail as possible.
-
-  - type: input
+        
+ - type: dropdown
     id: environment
     attributes:
       label: Environment
-      description: Where is the bug occurring (e.g. browser, OS, device)?
-      placeholder: e.g. Chrome 123.0.0, Windows 11
-    validations:
-      required: true
-
+      description: Where is this bug?
+      options:
+        - Production (https://linky-s.pages.dev/)
+        - Development (https://development.linky-s.pages.dev/)
+        - Local Sever (probably http://localhost:5173/)
+        - Somewhere Else 
+        
   - type: textarea
     id: what-happened
     attributes:
