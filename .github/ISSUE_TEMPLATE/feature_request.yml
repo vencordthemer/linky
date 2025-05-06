@@ -48,3 +48,12 @@ body:
       default: 0
     validations:
       required: true
+
+  - type: checkboxes
+    id: no-duplicate
+    attributes:
+      label: Confirmation
+      description: Please confirm before submitting.
+      options:
+        - label: I have searched existing issues to make sure this feature request hasn’t been submitted already.
+          required: true
