@@ -1,0 +1,29 @@
+name: Dev Server Test
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  dev-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start dev server briefly and check output
+        run: |
+          timeout 10s npm run dev > dev_output.log 2>&1 || true
+          cat dev_output.log
+          grep -q "Local:.*http://localhost:" dev_output.log && echo "Dev server started successfully." || (echo "Dev server did not start." && exit 1)
