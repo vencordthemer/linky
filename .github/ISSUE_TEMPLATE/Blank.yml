@@ -1,0 +1,23 @@
+name: 📃 Blank Issue
+description: Create a blank issue. 
+
+body:
+    - type: markdown
+      attributes:
+          value: |
+           Thanks for taking the time to report a bug! Please fill out the form below as thoroughly as possible.
+
+    - type: textarea
+      id: content
+      attributes:
+          label: Content
+      validations:
+          required: true
+
+    - type: checkboxes
+      id: agreement-check
+      attributes:
+          label: Request Agreement
+          options:
+              - label: I have read the requirements for opening an issue above
+                required: true
