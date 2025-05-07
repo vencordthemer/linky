@@ -17,7 +17,7 @@ body:
     - type: checkboxes
       id: agreement-check
       attributes:
-          label: Request Agreement
+          label: Confirmation
           options:
-              - label: I have read the requirements for opening an issue above
+              - label: I have searched existing issues and confirmed this is not a duplicate.
                 required: true
