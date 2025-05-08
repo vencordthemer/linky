@@ -196,7 +196,7 @@ export const AuthProvider = ({ children }) => {
       case 'auth/invalid-credential':
         return 'Invalid email or password.';
       case 'auth/email-already-in-use':
-        return 'This email address is already in use.';
+        return 'This email address is already in use. Would you like to login?';
       case 'auth/weak-password':
         return 'Password should be at least 6 characters.';
       case 'auth/popup-closed-by-user':
