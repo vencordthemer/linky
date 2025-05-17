@@ -2,59 +2,85 @@
 
 Thanks for your interest in contributing to **Linky**! This guide will help you set up the project, follow our standards, and submit a pull request.
 
+We use Visual Studio Code (VSCode) to develop Linky, we have optimized VSCode settings to make development easy, you can download that [here](https://code.visualstudio.com/Download).
+
 ---
+1.**Fork the repository**
 
-1. **Fork the repository**
-
-2. **Clone your repository**
+2.**Clone your repository**
    
    ```bash
    git clone https://github.com/YOUR_USERNAME/linky.git
    cd linky
    ```
 
-3. **Create a new branch**
+3.**Install extentions**
 
-   ```bash
-   git switch -c your-new-feature
-   ```
+   
+We will need to install the extentions that we recommend for this project by clicking on install below: 
 
-4. **Make your changes**
-    
-   You can do this in any text / code editor.
+![install extentions](https://github.com/user-attachments/assets/77c516a5-7cc6-4c4d-a9af-a31df53678dd)
 
-5. **Push and commit your changes**
+4.**Install dependancies**
 
-   First we will add the files and use the `git add` command:
+Do this using the install button in the corner:
 
-   ```bash
-   git add .
-   ```
-   (DO NOT COMMIT YOUR API KEYS IN THE `firebase.js`, THIS **WILL** MAKE THEM PUBLIC.)
+![install dependancies](https://github.com/user-attachments/assets/a077b71c-e823-4191-94a7-e8576b55ae7f)
 
-   Now, we will commit your changes:
 
-   ```bash
-   git commit -m "explain your changes here"
-   ```
+5.**Making changes**
 
-   Finaly, we will push your changes to your new branch:
+You now will have a preview of Linky on the left and it should update when you change some code.
 
-   ```bash
-   git push -u origin your-branch-name
-   ```
+It should look something like this:
 
-   ### Making a PR (Pull request)
+![preview](https://github.com/user-attachments/assets/879b23d1-e012-489c-bc32-9545b9a57c6b)
 
-   To commit to the main repo, you will need to make a PR, assuming you have already pushed the changes, you can go to YOUR fork and press this button:
-   <img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
-   (image from first-contibutions/assets)
+You can now make some changes
 
-   Now submit the pull request.
 
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
-(image from first-contibutions/assets)
+6.**Merging your chnages**
 
+Once you made your changes, look at the footer and you should see something that says master: 
+
+![pr](https://github.com/user-attachments/assets/909f8110-cf2d-45be-b725-3378a9ae20d0)
+
+6.1.**Changing branches**
+
+Now you should chnage you branch by clicking on the master button above and clicking on 'Create new branch'
+
+Once you do this name your branch in the input box.
+
+6.2.**Commiting changes**
+
+Do this by clicking on the source control button:
+
+![](https://github.com/user-attachments/assets/d0901e07-2a5f-4c93-9b28-26c73c1ac79b)
+
+Now, commit your changes in the input box :
+
+![](https://github.com/user-attachments/assets/e320aa21-2e9e-4468-8671-0af8ef012159)
+
+6.3.**Merging to main repo**
+
+Now, you will need to merge to the main repo with a Pull Request. To do this, click on the GitHub icon:
+
+![image](https://github.com/user-attachments/assets/993da161-05c0-4381-87a4-a83ca26754c0)
+
+Then, click on the pull request icon: 
+
+
+![image](https://github.com/user-attachments/assets/44757027-5d33-44e4-aa61-f4a28d39cd92)
+
+
+Now, fill out the form:
+
+
+![image](https://github.com/user-attachments/assets/4f296798-c1bf-4583-b25d-4e06737ded4e)
+
+
+Create it using the create button.
+   
 Some tests will run and when they complete I may merge it or ask you to make some changes.
 
 Thank you for showing a interest in **Linky** ❤️
