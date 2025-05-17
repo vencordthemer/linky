@@ -57,18 +57,29 @@ Do this by clicking on the source control button:
 
 ![](https://github.com/user-attachments/assets/d0901e07-2a5f-4c93-9b28-26c73c1ac79b)
 
-Now, coommit your changes in the input box :
+Now, commit your changes in the input box :
 
 ![](https://github.com/user-attachments/assets/e320aa21-2e9e-4468-8671-0af8ef012159)
 
-6.3.**
+6.3.**Merging to main repo**
+
+Now, you will need to merge to the main repo with a Pull Request. To do this, click on the GitHub icon:
+
+![image](https://github.com/user-attachments/assets/993da161-05c0-4381-87a4-a83ca26754c0)
+
+Then, click on the pull request icon: 
 
 
+![image](https://github.com/user-attachments/assets/44757027-5d33-44e4-aa61-f4a28d39cd92)
 
 
+Now, fill out the form:
 
 
+![image](https://github.com/user-attachments/assets/4f296798-c1bf-4583-b25d-4e06737ded4e)
 
+
+Create it using the create button.
    
 Some tests will run and when they complete I may merge it or ask you to make some changes.
 
