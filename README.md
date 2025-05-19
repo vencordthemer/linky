@@ -1,4 +1,25 @@
 # 🔗 Linky 
+![Forks](https://img.shields.io/github/forks/vencordthemer/linky?color=blue&labelColor=grey)
+	![Watchers](https://img.shields.io/github/watchers/vencordthemer/linky?color=blue&labelColor=grey)
+ 	![Stars](https://img.shields.io/github/stars/vencordthemer/linky?color=blue&labelColor=grey)
+
+
+ 
+ ![License](https://img.shields.io/github/license/vencordthemer/linky?color=blue&labelColor=grey)
+![PRs](https://img.shields.io/github/issues-pr/vencordthemer/linky?color=blue&labelColor=grey)
+![Issues](https://img.shields.io/github/issues/vencordthemer/linky?color=blue&labelColor=grey)
+![Last Commit](https://img.shields.io/github/last-commit/vencordthemer/linky?color=blue&labelColor=grey)
+ ![Commits](https://img.shields.io/github/commit-activity/m/vencordthemer/linky)
+ 	![Repo Size](https://img.shields.io/github/repo-size/vencordthemer/linky)
+![Contributors](https://img.shields.io/github/contributors/vencordthemer/linky?color=blue&labelColor=grey)  ![Website](https://img.shields.io/website?url=https://linky-s.pages.dev&color=blue&label=linky.pages.dev&labelColor=grey)
+![Lines of Code](https://tokei.rs/b1/github/vencordthemer/linky)
+
+
+
+
+
+
+
 [![Linky GitHub Status](https://linky-github-status-svg.vercel.app/status.svg)](https://linky.statuspage.io/)
 
 
