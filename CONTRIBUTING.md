@@ -10,7 +10,7 @@ We use Visual Studio Code (VSCode) to develop Linky, we have optimized VSCode se
 2.**Clone your repository**
    
    ```bash
-   git clone https://github.com/YOUR_USERNAME/linky.git
+   git clone https://github.com/vencordthemer/linky.git
    cd linky
    ```
 
